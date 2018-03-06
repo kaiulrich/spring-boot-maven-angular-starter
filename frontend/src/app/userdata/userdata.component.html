@@ -1,0 +1,18 @@
+<p *ngIf="message !== undefined">
+  <ngb-alert [type]="message.type" [dismissible]="false">
+    {{ message.text }}
+  </ngb-alert>
+</p>
+
+<form  (ngSubmit)="onSubmit()" #userdataForm="ngForm">
+  	<div>
+    	<label>Personalnummer:  <input type="text" id="personalNummer" name="personalNummer" required [(ngModel)]="personalNummer" name="personalNummer"> </label> 
+    	<button type="submit" class="btn btn-success" [disabled]="!userdataForm.form.valid">Submit</button>  
+	</div>
+ </form>
+
+<div *ngIf="user !== undefined">
+<div><strong>Personalnummer:</strong> {{user.personalNumber}}</div>
+<div><strong>Firstname: </strong>{{user.firstname}}</div>
+<div><strong>Secondname:</strong> {{user.secondname}}</div>
+</div>

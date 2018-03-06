@@ -19,7 +19,7 @@
 *.launch
 .settings/
 *.sublime-workspace
-.metadata
+it.metadata
 
 # IDE - VSCode
 .vscode/*
