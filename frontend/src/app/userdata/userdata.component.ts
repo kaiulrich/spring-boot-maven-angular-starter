@@ -38,9 +38,9 @@ export class UserdataComponent implements OnInit {
             if(u){
                 console.log(u);
                 this.user = u
-                this.message =  {type: 'success', text: 'Profiel miit Personalnummer '+ personalNummer +' gefunden.' };
+                this.message =  {type: 'success', text: 'Profil mit Personalnummer '+ personalNummer +' gefunden.' };
             }else{
-                this.message =  {type: 'warning', text: 'Kein Profiel mit der Personalnummer ' + personalNummer + ' gefunden!' } ;
+                this.message =  {type: 'warning', text: 'Kein Profil mit der Personalnummer ' + personalNummer + ' gefunden!' } ;
             }
         },
         err => {
@@ -55,9 +55,9 @@ export class UserdataComponent implements OnInit {
             if(u){
                 console.log(u);
                 this.user = u
-                this.message =  {type: 'success', text: 'Profiel miit Personalnummer '+ personalNummer +' gefunden.' };
+                this.message =  {type: 'success', text: 'Profil miit Personalnummer '+ personalNummer +' gefunden.' };
             }else{
-                this.message =  {type: 'warning', text: 'Kein Profiel mit der Personalnummer ' + personalNummer + ' gefunden!' } ;
+                this.message =  {type: 'warning', text: 'Kein Profil mit der Personalnummer ' + personalNummer + ' gefunden!' } ;
             }
         },
         err => {
