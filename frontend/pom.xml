@@ -17,7 +17,7 @@
   <build>
     <resources>
       <resource>
-        <directory>ui-src</directory>
+        <directory>target/ui-src</directory>
       </resource>
     </resources>
     <plugins>

@@ -24,11 +24,29 @@ export class UserdataComponent implements OnInit {
 
 
     onSubmit() {
-        this.getUser(this.personalNummer); 
+        this.getUserDataRest(this.personalNummer); 
     }
 
     // TODO: Remove this when we're done
     get diagnostic() { return JSON.stringify(this.user) + ' ' + this.personalNummer}
+    
+    
+    getUserDataRest(personalNummer: string): void {
+        this.userDataService.getUserDataRest(personalNummer)
+        .subscribe(
+        u => {
+            if(u){
+                console.log(u);
+                this.user = u
+                this.message =  {type: 'success', text: 'Profiel miit Personalnummer '+ personalNummer +' gefunden.' };
+            }else{
+                this.message =  {type: 'warning', text: 'Kein Profiel mit der Personalnummer ' + personalNummer + ' gefunden!' } ;
+            }
+        },
+        err => {
+            this.message =  {type: 'danger', text: err}
+        });
+      }
     
     getUser(personalNummer: string): void {
         this.userDataService.getUserData(personalNummer)
@@ -43,7 +61,7 @@ export class UserdataComponent implements OnInit {
             }
         },
         err => {
-            this.message =  {type: 'info', text: err}
+            this.message =  {type: 'danger', text: err}
         });
       }
 

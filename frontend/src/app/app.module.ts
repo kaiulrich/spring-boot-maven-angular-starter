@@ -5,6 +5,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { FormsModule }   from '@angular/forms';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 import { AppComponent } from './app.component';
 
 import { environment } from './../environments/environment';
@@ -22,6 +25,7 @@ import { UserDataService } from './userdata.service';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     NgbModule.forRoot()
   ],
   providers: [

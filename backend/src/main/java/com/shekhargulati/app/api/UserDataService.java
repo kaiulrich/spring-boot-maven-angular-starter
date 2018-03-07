@@ -13,13 +13,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserDataService {
 
     @GetMapping(path = "userdata/{personalnumber}")
-    public UserData getUserData(@PathVariable(name="personalnumber") String personalnumber) {
+    public UserData getUserData(@PathVariable(name="personalnumber") String personalnumber) throws Exception {
     	if(personalnumber.equals("1234567"))
     		return new UserData("1234567", "Marc", "Mustermann");
     	else if(personalnumber.equals("7654321"))
     		return new UserData("7654321", "Frida", "Meier");
     	else if(personalnumber.equals("11111111"))
     		return new UserData("11111111", "do", "test");
+    	else if(personalnumber.equals("error"))
+    		throw new Exception("error");
     	else
     		return null;
     }
