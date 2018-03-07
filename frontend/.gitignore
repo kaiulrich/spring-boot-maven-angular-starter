@@ -7,6 +7,7 @@
 /ui-src
 /node_modules
 /node
+/target
 
 # dependencies
 /node_modules

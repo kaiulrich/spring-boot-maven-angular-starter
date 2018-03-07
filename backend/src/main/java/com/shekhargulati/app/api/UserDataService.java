@@ -21,6 +21,6 @@ public class UserDataService {
     	else if(personalnumber.equals("11111111"))
     		return new UserData("11111111", "do", "test");
     	else
-    		return new UserData("User " + personalnumber + " not found", personalnumber);
+    		return null;
     }
 }
