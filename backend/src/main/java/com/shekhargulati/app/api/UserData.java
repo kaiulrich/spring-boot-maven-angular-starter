@@ -2,43 +2,47 @@ package com.shekhargulati.app.api;
 
 public class UserData {
 	
-	private String errormessage;
-	
 	private String personalNumber;
-	private String firstname;
-	private String secondname;
+	private String username;
+	private String email;
+	private String telefon;
+	private String street;
+	private String zipcode;
+	private String town;
 	
-	public UserData(String personalNumber, String firstname, String secondname) {
-		super();
-		this.errormessage = null;
-		this.personalNumber = personalNumber;
-		this.firstname = firstname;
-		this.secondname = secondname;
-	}
 	
-	public UserData(String errormessage, String personalNumber) {
+	public UserData(String personalNumber, String username, String email, String telefon, String street, String zipcode,
+			String town) {
 		super();
-		this.errormessage = errormessage;
 		this.personalNumber = personalNumber;
-		this.firstname = null;
-		this.secondname = null;
+		this.username = username;
+		this.email = email;
+		this.telefon = telefon;
+		this.street = street;
+		this.zipcode = zipcode;
+		this.town = town;
 	}
 	public String getPersonalNumber() {
 		return personalNumber;
 	}
-	public String getFirstname() {
-		return firstname;
+	public String getUsername() {
+		return username;
 	}
-	public String getSecondname() {
-		return secondname;
+	public String getEmail() {
+		return email;
 	}
-
-	public String getErrormessage() {
-		return errormessage;
+	public String getTelefon() {
+		return telefon;
 	}
-	
-	
-	
+	public String getStreet() {
+		return street;
+	}
+	public String getZipcode() {
+		return zipcode;
+	}
+	public String getTown() {
+		return town;
+	}
 	
 
 }
