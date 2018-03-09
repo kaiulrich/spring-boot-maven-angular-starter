@@ -9,6 +9,8 @@
 /node
 /target
 /target/*
+.recommenders
+*.
 
 # dependencies
 /node_modules

@@ -26,7 +26,12 @@ public class UserDataService {
 	
 	public UserData getRemoteUserData(String personalnumber) throws Exception {
 		VerwaltenReiseprofilResponse resp = verwaltenReiseprofilClient.getReiseprofil(personalnumber);
+		if(resp == null) 
+			return null;
+		else if(resp.getUPRAEUSER() == null || "".equals(resp.getUPRAEUSER()))
+			return null;
 		
+			
 		return new UserData(resp.getUPRPERS().toString(), resp.getUPRAEUSER(), resp.getUPREMAILDIENST(), resp.getUPRTELEFONDIENST(), resp.getUPRDRSTRASSE(), resp.getUPRDRPLZ(), resp.getUPRDRORT());
 
 	}

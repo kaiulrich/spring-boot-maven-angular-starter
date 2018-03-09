@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <sn0:verwaltenReiseprofilResponse xmlns:sn0="urn:com-softwareag-entirex-rpc:SYSTEM-RPR2VW-N">
+         <U-AKTION>AEBE</U-AKTION>
+         <U-PR-PERS>67015118</U-PR-PERS>
+         <U-PR-GESPERRT/>
+         <U-PR-EMAIL-DIENST>mock.test(a)test.de</U-PR-EMAIL-DIENST>
+         <U-PR-TELEFON-DIENST>0711-34266677</U-PR-TELEFON-DIENST>
+         <U-PR-FAX-DIENST/>
+         <U-PR-TRGELD-KE>N</U-PR-TRGELD-KE>
+         <U-PR-TGL-RUECK-KE/>
+         <U-PR-SCHWB-KE>N</U-PR-SCHWB-KE>
+         <U-PR-SCHWB-GRAD-ID>0</U-PR-SCHWB-GRAD-ID>
+         <U-PR-SCHWB-GRAD-TXT/>
+         <U-PR-PERS-GRUPPE-SEL>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string>X</string>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+         </U-PR-PERS-GRUPPE-SEL>
+         <U-PR-PERS-GRUPPE-ID>
+            <string>ZBPG0105</string>
+            <string>ZBPG0110</string>
+            <string>ZBPG0115</string>
+            <string>ZBPG0120</string>
+            <string>ZBPG0125</string>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+         </U-PR-PERS-GRUPPE-ID>
+         <U-PR-PERS-GRUPPE-TXT>
+            <string>Beamtin/Beamter in Ausbildung</string>
+            <string>Behördenleiter/in ohne Vorgesetzte/n</string>
+            <string>Beauftragte/r für Chancengleichheit</string>
+            <string>Vertrauensperson der schwerbehinderten Menschen</string>
+            <string>Mitglied des Personalrats</string>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+         </U-PR-PERS-GRUPPE-TXT>
+         <U-PR-BAHNCARD-ART-ID>BCDA0110</U-PR-BAHNCARD-ART-ID>
+         <U-PR-BAHNCARD-ART-TXT>25 / 1.Klasse</U-PR-BAHNCARD-ART-TXT>
+         <U-PR-BAHNCARD-DAT-BIS>20120309</U-PR-BAHNCARD-DAT-BIS>
+         <U-PR-BAHNCARD-ERST-DH-KE>N</U-PR-BAHNCARD-ERST-DH-KE>
+         <U-PR-BAHN-KLASSE-KE/>
+         <U-PR-BAHN-SITZ-FENSTER-KE>J</U-PR-BAHN-SITZ-FENSTER-KE>
+         <U-PR-BAHN-ABTEIL-KE>J</U-PR-BAHN-ABTEIL-KE>
+         <U-PR-BAHN-HANDY-KE>J</U-PR-BAHN-HANDY-KE>
+         <U-PR-FLUG-SITZ-FENSTER-KE>N</U-PR-FLUG-SITZ-FENSTER-KE>
+         <U-PR-DST-REISE>169960</U-PR-DST-REISE>
+         <U-PR-DST-REISE-BEZ>Pädagogische Hochschule Weing. Weingarten</U-PR-DST-REISE-BEZ>
+         <U-PR-ZUORDNUNG/>
+         <U-PR-ALLG-GENEHM-KE/>
+         <U-PR-ALLG-GENEHM-DST-AUS/>
+         <U-PR-ALLG-GENEHM-TXT/>
+         <U-PR-ALLG-GENEHM-DAT>0</U-PR-ALLG-GENEHM-DAT>
+         <U-PR-ALLG-GENEHM-AKTENZ/>
+         <U-PR-ALLG-GENEHM-GEPR-DAT>0</U-PR-ALLG-GENEHM-GEPR-DAT>
+         <U-PR-ALLG-GENEHM-GEPR-USER/>
+         <U-PR-ALLG-GENEHM-GEPR-NAME/>
+         <U-PR-KFZ-PRIV-ANERK-KE/>
+         <U-PR-KFZ-PRIV-KENNZEICH>
+            <string/>
+            <string/>
+            <string/>
+         </U-PR-KFZ-PRIV-KENNZEICH>
+         <U-PR-KFZ-PRIV-600CCM-KE/>
+         <U-PR-PERS-SV>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+         </U-PR-PERS-SV>
+         <U-PR-PERS-SV-NAME>
+            <string/>
+            <string/>
+            <string/>
+         </U-PR-PERS-SV-NAME>
+         <U-PR-EMAIL-SV>
+            <string/>
+            <string/>
+            <string/>
+         </U-PR-EMAIL-SV>
+         <U-PR-EMAIL-FACHVORG>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+         </U-PR-EMAIL-FACHVORG>
+         <U-PR-EMAIL-VERTR>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+         </U-PR-EMAIL-VERTR>
+         <U-PR-DST-ORGA>0</U-PR-DST-ORGA>
+         <U-PR-EMAIL-VERZICHT-KE>N</U-PR-EMAIL-VERZICHT-KE>
+         <U-PR-BPA-KE>N</U-PR-BPA-KE>
+         <U-PR-LEHRER-KE/>
+         <U-PR-STAMMSCHULE>0</U-PR-STAMMSCHULE>
+         <U-PR-STAMMSCHULE-BEZ/>
+         <U-PR-STAMMSCHULE-STD-GESAMT>0.00</U-PR-STAMMSCHULE-STD-GESAMT>
+         <U-PR-STAMMSCHULE-STD-ANTEILIG>0.00</U-PR-STAMMSCHULE-STD-ANTEILIG>
+         <U-PR-TEILABO-SCHULE>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+         </U-PR-TEILABO-SCHULE>
+         <U-PR-TEILABO-SCHULE-BEZ>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+         </U-PR-TEILABO-SCHULE-BEZ>
+         <U-PR-TEILABO-STD>
+            <decimal>0.00</decimal>
+            <decimal>0.00</decimal>
+            <decimal>0.00</decimal>
+            <decimal>0.00</decimal>
+            <decimal>0.00</decimal>
+            <decimal>0.00</decimal>
+            <decimal>0.00</decimal>
+            <decimal>0.00</decimal>
+            <decimal>0.00</decimal>
+            <decimal>0.00</decimal>
+         </U-PR-TEILABO-STD>
+         <U-PR-AE-DAT>20171011</U-PR-AE-DAT>
+         <U-PR-AE-ZEIT>858113</U-PR-AE-ZEIT>
+         <U-PR-AE-PERS>0</U-PR-AE-PERS>
+         <U-PR-AE-USER>Mustermann</U-PR-AE-USER>
+         <U-PR-AE-PGM>RPR4VW-N</U-PR-AE-PGM>
+         <U-PR-DR-NAME-AUFBEREITET>Testfall Andrea</U-PR-DR-NAME-AUFBEREITET>
+         <U-PR-DR-ADR-AUFBEREITET>Am Sportpark 3, 70469 Stuttgart</U-PR-DR-ADR-AUFBEREITET>
+         <U-PR-DR-STRASSE>Am Sportpark 3</U-PR-DR-STRASSE>
+         <U-PR-DR-PLZ>70469</U-PR-DR-PLZ>
+         <U-PR-DR-ORT>Stuttgart</U-PR-DR-ORT>
+         <U-PR-DR-DST-BDSD>159939</U-PR-DR-DST-BDSD>
+         <U-PR-DR-DST-BDSD-BEZ>Landesamt f.Besold.u.Versorg. Fellbach</U-PR-DR-DST-BDSD-BEZ>
+         <U-PR-DR-DST-ABORDNUNG>158344</U-PR-DR-DST-ABORDNUNG>
+         <U-PR-DR-DST-ABORDNUNG-BEZ>Finanzamt Aalen</U-PR-DR-DST-ABORDNUNG-BEZ>
+         <U-PR-DR-DST-DIENSTSITZ>0</U-PR-DR-DST-DIENSTSITZ>
+         <U-PR-DR-DST-DIENSTSITZ-BEZ/>
+         <U-PR-DR-ANWAERTER-KE/>
+         <U-PR-DR-RESSORT>14</U-PR-DR-RESSORT>
+         <A-CV-SV>O</A-CV-SV>
+         <A-CV-MODUS>O</A-CV-MODUS>
+         <A-TIME>0</A-TIME>
+         <A-RC>0</A-RC>
+         <A-RC-FELD/>
+         <A-RC-FELD-INDEX1>0</A-RC-FELD-INDEX1>
+         <A-RC-FELD-INDEX2>0</A-RC-FELD-INDEX2>
+         <A-RC-FELD-INDEX3>0</A-RC-FELD-INDEX3>
+         <A-RC-MSG>I0040  Das Reiseprofil   wurde ermittelt.</A-RC-MSG>
+         <A-RC-MSG-ART>I</A-RC-MSG-ART>
+         <A-RC-MSG-NUMMER>40</A-RC-MSG-NUMMER>
+         <A-RC-MSG-TEXT>Das Reiseprofil   wurde ermittelt.</A-RC-MSG-TEXT>
+         <A-RC-PGM>LDT0235N</A-RC-PGM>
+         <A-RC-DATEI/>
+         <A-RC-DSC-BEZ/>
+         <A-RC-DSC-START/>
+         <A-RC-PARM-BEZ/>
+         <A-RC-PARM-WERT/>
+         <U-MANDANT>08</U-MANDANT>
+         <U-USER-PERS>0</U-USER-PERS>
+         <U-USER-PTN>0</U-USER-PTN>
+         <U-USER-ROLLEN>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+         </U-USER-ROLLEN>
+         <U-USER-ID/>
+         <U-USER-RECHTE/>
+         <U-UDB-AKT>202</U-UDB-AKT>
+         <U-UDB-AKT-TXT>Entwicklung LBV</U-UDB-AKT-TXT>
+         <U-UDB-AKT-STATUS>E</U-UDB-AKT-STATUS>
+         <U-UDB-AKT-BDL>08</U-UDB-AKT-BDL>
+         <U-STRG-PGM>RPR2VW-N</U-STRG-PGM>
+         <U-STRG-PGM-VORHER/>
+         <U-STRG-CO>false</U-STRG-CO>
+         <U-STRG-ET>true</U-STRG-ET>
+         <U-STRG-EXIT/>
+         <U-STRG-NEXT-CONTROLLER/>
+         <U-STRG-NEXT-AKTION/>
+         <U-TRACE-LVL>0</U-TRACE-LVL>
+         <U-TRACE-TIME>13:14:57,0</U-TRACE-TIME>
+         <U-TRACE-IN-LVL>1</U-TRACE-IN-LVL>
+         <U-TRACE-IN>Copycode RSYSENDC</U-TRACE-IN>
+         <U-TRACE-ARR>
+            <string/>
+            <string/>
+            <string>TRACE-LVL 1 13:14:57,0 RPR2VW-N *LEVEL 2 Copycode RSYSENDC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RSYSMSGN *LEVEL 4 I0040  Das Reiseprofil   wurde ermittelt.</string>
+            <string>TRACE-LVL 1 13:14:57,0 RKA2LI-N *LEVEL 3 Copycode RSYSENDC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RKA2LI-N *LEVEL 3 Copycode RSYSINIC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RPR3VW-N *LEVEL 3 Copycode RSYSENDC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RPR4VW-N *LEVEL 4 Copycode RSYSENDC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RPR4VW-N *LEVEL 4 Copycode RSYSINIC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RSP3HO-N *LEVEL 4 Copycode RSYSENDC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RSP3HO-N *LEVEL 4 Copycode RSYSINIC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RSD3HO-N *LEVEL 4 Copycode RSYSENDC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RSD3HO-N *LEVEL 4 Copycode RSYSINIC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RSD3HO-N *LEVEL 4 Copycode RSYSENDC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RSD3HO-N *LEVEL 4 Copycode RSYSINIC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RPR3VW-N *LEVEL 3 Copycode RSYSINIC</string>
+            <string>TRACE-LVL 1 13:14:57,0 RPR2VW-N *LEVEL 2 Copycode RSYSINIC</string>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+            <string/>
+         </U-TRACE-ARR>
+         <U-TRACE-I>3</U-TRACE-I>
+         <U-TRACE-OUT-TYP/>
+         <U-TRACE-OUT-LVL>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+            <decimal>0</decimal>
+         </U-TRACE-OUT-LVL>
+         <U-ERR-PGM/>
+         <U-ERR-NR>0</U-ERR-NR>
+         <U-ERR-LINE>0</U-ERR-LINE>
+         <U-ERR-DATEI/>
+         <U-ERR-OBJEKT-BEZ/>
+         <U-ERR-OBJEKT-WERT/>
+         <U-ERR-PARM-BEZ/>
+         <U-ERR-PARM-WERT/>
+         <U-ERR-TXT/>
+      </sn0:verwaltenReiseprofilResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

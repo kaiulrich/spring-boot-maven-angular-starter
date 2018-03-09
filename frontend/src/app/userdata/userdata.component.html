@@ -11,8 +11,12 @@
 	</div>
  </form>
 
-<div *ngIf="user !== undefined">
+<div *ngIf="showData">
 <div><strong>Personalnummer:</strong> {{user.personalNumber}}</div>
-<div><strong>Firstname: </strong>{{user.firstname}}</div>
-<div><strong>Secondname:</strong> {{user.secondname}}</div>
+<div><strong>Benutzername: </strong>{{user.username}}</div>
+<div><strong>Email:</strong> {{user.email}}</div>
+<div><strong>Telefon: </strong>{{user.telefon}}</div>
+<div><strong>Strasse:</strong> {{user.street}}</div>
+<div><strong>PLZ:</strong> {{user.zipcode}}</div>
+<div><strong>Stadt:</strong> {{user.town}}</div>
 </div>

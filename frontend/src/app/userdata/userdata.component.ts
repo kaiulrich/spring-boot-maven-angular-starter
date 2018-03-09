@@ -11,9 +11,10 @@ export class UserdataComponent implements OnInit {
     
     personalNummer: string = '';
     userdatas: UserData[];
-    user: UserData;
+    user ? : UserData;
     submitted = false;
     message = {}
+    showData: boolean = false;
 
     constructor(private userDataService: UserDataService) { }
 
@@ -37,13 +38,16 @@ export class UserdataComponent implements OnInit {
         u => {
             if(u){
                 console.log(u);
-                this.user = u
+                this.user = u;
+                this.showData = true;
                 this.message =  {type: 'success', text: 'Profil mit Personalnummer '+ personalNummer +' gefunden.' };
             }else{
+                this.showData = false;
                 this.message =  {type: 'warning', text: 'Kein Profil mit der Personalnummer ' + personalNummer + ' gefunden!' } ;
             }
         },
         err => {
+            this.showData = false;
             this.message =  {type: 'danger', text: err}
         });
       }
@@ -55,12 +59,15 @@ export class UserdataComponent implements OnInit {
             if(u){
                 console.log(u);
                 this.user = u
+                this.showData = true;
                 this.message =  {type: 'success', text: 'Profil miit Personalnummer '+ personalNummer +' gefunden.' };
             }else{
+                this.showData = false;
                 this.message =  {type: 'warning', text: 'Kein Profil mit der Personalnummer ' + personalNummer + ' gefunden!' } ;
             }
         },
         err => {
+            this.showData = false;
             this.message =  {type: 'danger', text: err}
         });
       }
