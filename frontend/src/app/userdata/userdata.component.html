@@ -5,13 +5,18 @@
 </p>
 
 <form  (ngSubmit)="onSubmit()" #userdataForm="ngForm">
-  	<div>
-    	<label>Personalnummer:  <input type="text" id="personalNummer" name="personalNummer" required [(ngModel)]="personalNummer" name="personalNummer"> </label> 
-    	<button type="submit" class="btn btn-success" [disabled]="!userdataForm.form.valid">Submit</button>  
+   <div class="form-group">
+     	<label for="dienststelle" >Dienststelle</label> <input class="form-control" type="text" id="dienststelle" name="dienststelle" required [(ngModel)]="dienststelle" name="dienststelle"> 
 	</div>
+  <div class="form-group">
+    	<label for="personalNummer">Personalnummer</label> <input class="form-control" type="text" id="personalNummer" name="personalNummer" required [(ngModel)]="personalNummer" name="personalNummer">  
+    </div>
+  <button type="submit" class="btn btn-success" [disabled]="!userdataForm.form.valid">Submit</button>  
+	
  </form>
 
 <div *ngIf="showData">
+<br><br>
 <div><strong>Personalnummer:</strong> {{user.personalNumber}}</div>
 <div><strong>Benutzername: </strong>{{user.username}}</div>
 <div><strong>Email:</strong> {{user.email}}</div>

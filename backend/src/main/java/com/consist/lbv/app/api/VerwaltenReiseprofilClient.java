@@ -1,4 +1,4 @@
-package com.shekhargulati.app.api;
+package com.consist.lbv.app.api;
 
 import java.math.BigDecimal;
 
@@ -13,7 +13,7 @@ import lbv.wsdl.VerwaltenReiseprofilResponse;
 
 public class VerwaltenReiseprofilClient extends WebServiceGatewaySupport {
 
-	private static final Logger log = LoggerFactory.getLogger(VerwaltenReiseprofil.class);
+	private static final Logger log = LoggerFactory.getLogger(VerwaltenReiseprofilClient.class);
 	
     @Value("${backend.webservice.url}")
     private String backendWebserviceUrl;
@@ -22,24 +22,36 @@ public class VerwaltenReiseprofilClient extends WebServiceGatewaySupport {
     private String url;
 
 
-	public VerwaltenReiseprofilResponse getReiseprofil(String personalnummer) {
+	public VerwaltenReiseprofilResponse getReiseprofil(String dienststelle, String personalnummer) {
+		log.info("VerwaltenReiseprofilClient.getReiseprofil: personalnummer=" + personalnummer);
+		log.info("VerwaltenReiseprofilClient.getReiseprofil: dienststelle=" + dienststelle);
+
 		BigDecimal p = null;
 		try {
 			p = new BigDecimal(personalnummer);
 		}catch(Exception e) {
+			log.info("VerwaltenReiseprofilClient.getReiseprofil personalnummer: Error parsing BigDecimal=" + e.getMessage());
+			return null;
+		}
+		
+		BigDecimal d = null;
+		try {
+			d = new BigDecimal(dienststelle);
+		}catch(Exception e) {
+			log.info("VerwaltenReiseprofilClient.getReiseprofil dienststelle: Error parsing BigDecimal=" + e.getMessage());
 			return null;
 		}
 		VerwaltenReiseprofil request = new VerwaltenReiseprofil();
 		request.setUAKTION("HOLE");
 		request.setUPRPERS(p);
+		request.setUPRDSTREISE(d);
 
-		log.info("VerwaltenReiseprofilResponse quote for " + personalnummer);
 		String u = null;
 		if(url != null  && !"".equals(url)) {
-			log.info("Webservice Backend URL: " + url);
+			log.info("VerwaltenReiseprofilClient.getReiseprofil: Webservice Backend URL: " + url);
 			u = url;
 		}else {
-			log.info("Webservice Backend URL: " + backendWebserviceUrl);
+			log.info("VerwaltenReiseprofilClient.getReiseprofil: Webservice Backend URL: " + backendWebserviceUrl);
 			u = backendWebserviceUrl;
 		}
 

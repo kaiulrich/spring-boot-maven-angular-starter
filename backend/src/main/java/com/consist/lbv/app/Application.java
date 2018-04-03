@@ -1,4 +1,4 @@
-package com.shekhargulati.app;
+package com.consist.lbv.app;
 
 import java.lang.reflect.Method;
 
@@ -19,7 +19,7 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 import org.springframework.ws.soap.SoapVersion;
 import org.springframework.ws.soap.saaj.SaajSoapMessageFactory;
 
-import com.shekhargulati.app.api.VerwaltenReiseprofilClient;
+import com.consist.lbv.app.api.VerwaltenReiseprofilClient;
 
 import lbv.wsdl.VerwaltenReiseprofil;
 import lbv.wsdl.VerwaltenReiseprofilResponse;

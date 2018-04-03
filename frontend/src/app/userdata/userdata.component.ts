@@ -10,7 +10,7 @@ import { UserDataService } from '../userdata.service';
 export class UserdataComponent implements OnInit {
     
     personalNummer: string = '';
-    userdatas: UserData[];
+    dienststelle: string = '159939';
     user ? : UserData;
     submitted = false;
     message = {}
@@ -20,20 +20,20 @@ export class UserdataComponent implements OnInit {
 
 
     ngOnInit() {
-        this.message = {type: 'info', text: 'Kein Benutzer ausgewählt! Bitte geben Sie eine Personalnummer ein.'}
+        this.message = {type: 'info', text: 'Kein Benutzer ausgewählt! Bitte geben Sie eine Dienststelle und eine Personalnummer ein.'}
     }
 
 
     onSubmit() {
-        this.getUserDataRest(this.personalNummer); 
+        this.getUserDataRest(this.dienststelle, this.personalNummer); 
     }
 
     // TODO: Remove this when we're done
-    get diagnostic() { return JSON.stringify(this.user) + ' ' + this.personalNummer}
+    get diagnostic() { return JSON.stringify(this.user) + ' ' + this.personalNummer+ ' ' + this.dienststelle}
     
     
-    getUserDataRest(personalNummer: string): void {
-        this.userDataService.getUserDataRest(personalNummer)
+    getUserDataRest(dienststelle: string, personalNummer: string): void {
+        this.userDataService.getUserDataRest(dienststelle, personalNummer)
         .subscribe(
         u => {
             if(u){
@@ -60,7 +60,7 @@ export class UserdataComponent implements OnInit {
                 console.log(u);
                 this.user = u
                 this.showData = true;
-                this.message =  {type: 'success', text: 'Profil miit Personalnummer '+ personalNummer +' gefunden.' };
+                this.message =  {type: 'success', text: 'Profil mit Personalnummer '+ personalNummer +' gefunden.' };
             }else{
                 this.showData = false;
                 this.message =  {type: 'warning', text: 'Kein Profil mit der Personalnummer ' + personalNummer + ' gefunden!' } ;

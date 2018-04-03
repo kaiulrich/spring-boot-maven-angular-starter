@@ -22,9 +22,9 @@ export class UserDataService {
         return of(u);
     }
     
-    getUserDataRest(personalNumber: string): Observable<UserData>{
+    getUserDataRest(dienststelle: string, personalNumber: string): Observable<UserData>{
       return this._http
-        .get<UserData>('/api/userdata/' + personalNumber)
+        .get<UserData>('/api/userdata/' + dienststelle + '/' + personalNumber)
         .do(data =>console.log('All : ' + JSON.stringify(data)))
         .catch(this.handleError);
     }

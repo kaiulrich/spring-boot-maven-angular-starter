@@ -1,4 +1,4 @@
-package com.shekhargulati.app.api;
+package com.consist.lbv.app.api;
 
 public class UserData {
 	
@@ -43,6 +43,12 @@ public class UserData {
 	public String getTown() {
 		return town;
 	}
+	@Override
+	public String toString() {
+		return "UserData [personalNumber=" + personalNumber + ", username=" + username + ", email=" + email
+				+ ", telefon=" + telefon + ", street=" + street + ", zipcode=" + zipcode + ", town=" + town + "]";
+	}
+	
 	
 
 }
